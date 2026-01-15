@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WZ_RLKZIN | Gamer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#000;
+    color:#fff;
+}
+
+/* FUNDO */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:url('fundo.jpg') center/cover no-repeat;
+    opacity:.45;
+    animation:spray 14s infinite alternate;
+    z-index:-1;
+}
+
+@keyframes spray{
+    from{transform:scale(1)}
+    to{transform:scale(1.08)}
+}
+
+header{
+    padding:70px 20px 40px;
+    text-align:center;
+}
+
+header h1{
+    font-size:3rem;
+    font-weight:800;
+    letter-spacing:3px;
+}
+
+header p{
+    margin-top:15px;
+    color:#ddd;
+    max-width:650px;
+    margin-inline:auto;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+/* COLUNAS */
+.card{
+    background:rgba(0,0,0,.75);
+    border:1px solid #fff;
+    border-radius:16px;
+    padding:30px;
+    margin-bottom:35px;
+    animation:entrada .9s ease forwards;
+}
+
+@keyframes entrada{
+    from{opacity:0;transform:translateY(40px)}
+    to{opacity:1;transform:translateY(0)}
+}
+
+.card h2{
+    font-size:1.8rem;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.7;
+    color:#eee;
+}
+
+/* VIDEO */
+.video-box{
+    position:relative;
+    padding-top:56.25%;
+    border-radius:14px;
+    overflow:hidden;
+    border:2px solid #fff;
+}
+
+.video-box iframe{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+}
+
+/* REDES */
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:25px;
+}
+
+.social-icons a{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    transform:scale(1.2);
+}
+
+.social-icons img{
+    width:30px;
+}
+
+/* GRID COLUNAS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<!-- MÚSICA -->
+<audio id="bgm" loop preload="auto">
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener('click',()=>{
+    const m=document.getElementById('bgm');
+    if(m.paused) m.play();
+},{once:true});
+</script>
+
+<header>
+    <h1>WZ_RLKZIN</h1>
+    <p>Canal gamer • Vários jogos • Conteúdo diário • Comunidade</p>
+</header>
+
+<div class="container">
+
+<!-- SOBRE -->
+<div class="card">
+<h2>🎮 Sobre o Canal</h2>
+<p>
+Bem-vindo ao canal <strong>WZ_RLKZIN</strong>!  
+Aqui rola conteúdo de vários jogos, desafios, vídeos insanos e evolução gamer.
+</p>
+</div>
+
+<!-- VIDEO -->
+<div class="card">
+<h2>📺 Último Vídeo</h2>
+<p>Bem-vindo ao canal! Em breve mais vídeos 🔥</p>
+<div class="video-box">
+<iframe src="https://www.youtube.com/embed/-cxqrWoo7jc"
+frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
+<!-- CONTEÚDO -->
+<div class="card">
+<h2>🕹️ Conteúdos do Canal</h2>
+
+<div class="grid">
+<div class="card">
+<h3>🔥 Gameplays</h3>
+<p>Partidas insanas, evolução e gameplay comentada.</p>
+</div>
+
+<div class="card">
+<h3>🎯 Desafios</h3>
+<p>Desafios difíceis, engraçados e diferentes.</p>
+</div>
+
+<div class="card">
+<h3>😂 Momentos</h3>
+<p>Cortes engraçados e momentos épicos.</p>
+</div>
+</div>
+</div>
+
+<!-- ROTINA -->
+<div class="card">
+<h2>⏰ Rotina do Canal</h2>
+<p>
+📌 Vídeos semanais  
+📌 Lives em breve  
+📌 Conteúdo variado
+</p>
+</div>
+
+<!-- REDES -->
+<div class="card">
+<h2>🌐 Redes & Comunidade</h2>
+
+<div style="text-align:center;margin-bottom:20px;">
+<div class="g-ytsubscribe"
+data-channelid="UCn55lKLETv93rhhrsDEme1A"
+data-layout="default"
+data-count="default"></div>
+</div>
+
+<div class="social-icons">
+<a href="https://www.youtube.com/@wz_kzin" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+</a>
+
+<a href="https://discord.gg/598qvg8Q" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
+</a>
+
+<a href="https://www.instagram.com/wz__kzin" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+</a>
+</div>
+</div>
+
+</div>
+
+<footer>
+© 2026 WZ_RLKZIN • Gamer • Street
+</footer>
+
+<script src="https://apis.google.com/js/platform.js"></script>
+</body>
+</html>
